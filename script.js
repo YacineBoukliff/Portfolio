@@ -96,7 +96,7 @@ function GenererFaq() {
   const faqContainer = document.getElementById("faq-container");
   FAQ.forEach((item, index) => {
     const faqItem = document.createElement("div");
-    faqItem.className = `collapse collapse-arrow mt-2 rounded-lg overflow-hidden border-2 border-black dark:border-white`;
+    faqItem.className = `collapse collapse-arrow mt-4 rounded-lg overflow-hidden border border-black shadow-md shadow-black dark:border-white dark:shadow-md dark:shadow-blue-500/50 `;
     faqItem.innerHTML = `
       <input type="checkbox" class="peer" />
       <div class="collapse-title text-xl font-bold text-black dark:text-white">
@@ -113,15 +113,15 @@ function GenererFaq() {
 function GenererCompetences() {
   const skillsContainer = document.getElementById("skills-container");
   skillsContainer.innerHTML = `
-    <h2 class="text-2xl font-bold text-center mb-6 dark:text-slate-50">
+    <h2 class="text-2xl font-bold text-center mb-12 dark:text-slate-50">
       Mes compétences techniques
     </h2>
     <div class="flex flex-wrap justify-center -mx-2">
       ${Competences.map(
         (category) => `
         <div class="w-full md:w-1/2 px-2 mb-4">
-          <div class="card bg-base-100 shadow-xl h-full">
-            <div class="card-body rounded-xl border-2 border-black dark:border-white">
+          <div class="card bg-base-100 h-full">
+            <div class="card-body rounded-xl border dark:shadow-md dark:shadow-blue-500/50 border-black dark:border-white ">
               <h3 class="card-title mb-4 font-bold dark:text-slate-50">${
                 category.category
               }</h3>
