@@ -42,7 +42,7 @@ const Competences = [
   },
   {
     category: "Back-end",
-    skills: ["Express-js.svg", "NodeJs.svg"],
+    skills: ["Express-js.svg", "NodeJs.svg","Php.svg"],
   },
   {
     category: "Database",
@@ -94,4 +94,5 @@ function GenererCompetences() {
 
 document.addEventListener("DOMContentLoaded", () => {
   GenererCompetences();
+  AOS.init();
 });

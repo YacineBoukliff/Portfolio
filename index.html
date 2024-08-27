@@ -9,7 +9,9 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="min-h-screen bg-base-100">
     <header
@@ -28,7 +30,7 @@
         <nav
           class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
         >
-          <a
+          <a href="#projets"
             class="mr-5 text-slate-50 font-semibold hover:text-black dark:hover:text-sky-500 hover:cursor-pointer hidden md:inline-block"
             >Projet</a
           >
@@ -170,57 +172,89 @@
     </section>
 
 
-
-
     <!-- Section Projet -->
 
-    <section class="text-gray-400 bg-gray-900 body-font dark:bg-black py-12 md:py-24">
-      <div class="container px-4 mx-auto">
-        <div class="flex flex-col mb-12">
-          <div class="w-full py-4 mb-8 bg-purple-500">
-            <h1 class="text-2xl md:text-3xl text-white font-medium title-font text-center">Mes projets</h1>
-          </div>
-        </div>
-        <div class="flex flex-wrap -mx-4">
-          <div class="p-4 w-full md:w-1/2 lg:w-1/3 mb-8">
-            <div class="rounded-lg overflow-hidden shadow-lg">
-              <img alt="Projet 1" class="object-cover object-center w-full h-48 md:h-64" src="https://dummyimage.com/1203x503">
-              <div class="p-6 bg-gray-800">
-                <h2 class="text-xl font-medium title-font text-white mb-3">Projet 1</h2>
-                <p class="text-base leading-relaxed mb-3">Mon premier projet perso où j'ai créé un site réplique Liverpool avec pour but de pratiquer et apprendre le Javascript</p>
-              </div>
+
+    <section id="projets" class="bg-gray-900 dark:bg-dark py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-white dark:text-white mb-12">Mes Projets</h2>
+        
+        <div data-aos="fade-left"  class="flex flex-wrap justify-center -mx-4">
+          <div class="flex justify-center w-full mb-8">
+            <!-- Projet 1 -->
+            <div class="w-full md:w-5/12 px-4 mb-8 md:mb-0">
+              <a href="https://github.com/YacineBoukliff/Projet-Javascript-HTML-CSS" target="_blank" rel="noopener noreferrer" class="block">
+                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer transition-opacity duration-300 hover:opacity-80">
+                  <img src="Images-Projet/Projet-Liverpool.png" alt="Projet 1" class="w-full h-48 object-cover object-center"/>
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Projet Liverpool</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Mon premier projet perso où j'ai créé un site single-page réplique Liverpool avec pour but de pratiquer et apprendre le Javascript. utilisation des librairies AOS et Swiper JS.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <!-- Projet 2 -->
+            <div class="w-full md:w-5/12 px-4">
+              <a href="https://github.com/YacineBoukliff/Projet-RepliqueAmazon-Javascript" target="_blank" rel="noopener noreferrer" class="block">
+                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer transition-opacity duration-300 hover:opacity-80">
+                  <img src="Images-Projet/Projet-Amazon.png" alt="Projet 2" class="w-full h-48 object-cover object-center"/>
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Projet Replique Amazon</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Projet perso multipage d'une réplique d'Amazon où je pratique pour apprendre plus en profondeur le Javascript. Manipulation du DOM, les arrays et objets, les modules, utilisation de librairies et architecture MVC.</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-          <div class="p-4 w-full md:w-1/2 lg:w-1/3 mb-8">
-            <div class="rounded-lg overflow-hidden shadow-lg">
-              <img alt="Projet 2" class="object-cover object-center w-full h-48 md:h-64" src="https://dummyimage.com/1204x504">
-              <div class="p-6 bg-gray-800">
-                <h2 class="text-xl font-medium title-font text-white mb-3">Projet 2</h2>
-                <p class="text-base leading-relaxed mb-3">Projet perso multipage d'une réplique d'Amazon où je pratique pour apprendre plus en profondeur le Javascript. Manipulation du DOM, les arrays et objets, les modules et utilisation de librairies et architecture MVC.</p>
-              </div>
-            </div>
-          </div>
-          <div class="p-4 w-full md:w-1/2 lg:w-1/3 mb-8">
-            <div class="rounded-lg overflow-hidden shadow-lg">
-              <img alt="Projet 3" class="object-cover object-center w-full h-48 md:h-64" src="https://dummyimage.com/1205x505">
-              <div class="p-6 bg-gray-800">
-                <h2 class="text-xl font-medium title-font text-white mb-3">Projet 3</h2>
-                <p class="text-base leading-relaxed mb-3">Projet perso scolaire en cours où j'ai commencé une application mobile sur le thème des voyages avec la techno React Native qui me permet de découvrir le langage</p>
-              </div>
+          
+          <!-- Deuxième rang avec un seul projet centré -->
+          <div class="flex justify-center w-full">
+            <div class="w-full md:w-5/12 px-4">
+              <a href="https://github.com/YacineBoukliff/ProjetReactNativee" target="_blank" rel="noopener noreferrer" class="block">
+                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer transition-opacity duration-300 hover:opacity-80">
+                  <img src="chemin/vers/image3.jpg" alt="Projet 3" class="w-full h-48 object-cover object-center"/>
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Projet JoJoGo</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Projet perso scolaire (non fini) où j'ai commencé une application mobile sur le thème des voyages avec la techno React Native et Firebase qui me permet d'apprendre tout en pratiquant</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div id="faq-container" class="max-w-2xl mx-auto px-4 bg"></div>
+    <div id="faq-container" class="max-w-2xl mx-auto px-4 "></div>
 
-    <div class="dark:bg-black w-screen">
+    <div  data-aos="fade-right" class="dark:bg-black w-screen ">
       <div
         id="skills-container"
         class="container mx-auto p-4 max-w-4xl mt-10 bg"
       ></div>
     </div>
+
+
+
+    <!-- Section Formation expérience profesionnelles  -->
+
+     <!-- A Propos  -->
+
+     <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+        <h1 class="text-center font-medium mb-6 text-4xl text-white">A propos </h1>
+          <p class="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
+          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+          <h2 class="text-white font-medium title-font tracking-wider text-sm">Yacine Bouklif</h2>
+          <p class="text-gray-500">Apprenti développeur Full Stack </p>
+        </div>
+      </div>
+    </section>
+
+
+
 
 
     <script src="script.js"></script>
